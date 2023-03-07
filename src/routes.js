@@ -1,3 +1,5 @@
+import PaginaPadrao from "components/PaginaPadrao";
+import Rodape from "components/Rodape";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Menu from "./components/Menu";
 import Inicio from "./paginas/Inicio";
@@ -9,10 +11,16 @@ function AppRoutes() {
       <Menu/>
 
       <Routes>
-        <Route path="/" element={<Inicio />}/>
-        <Route path="/sobremim" element={<SobreMim/>} />
+        <Route path="/" element={<PaginaPadrao/>}>
+          <Route index element={<Inicio />}/>
+          <Route path="sobremim" element={<SobreMim/>} />
+        </Route>
+
+        
         <Route path="*" element={<div>Pag n encontrada</div>}/>
       </Routes>
+
+      <Rodape/>
     </BrowserRouter>
   );
 }
