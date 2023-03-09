@@ -1,9 +1,14 @@
 .rodape {
-    background-color: var(--azul-escuro);
+    background-color: var(--azul-claro);
     color: var(--branco);
     padding: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: .5rem;
+}
+.rodape a {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #CCC;
+    text-decoration: underline;
 }

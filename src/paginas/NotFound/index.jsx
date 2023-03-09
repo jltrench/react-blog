@@ -1,6 +1,6 @@
 import styles from "./NotFound.module.css";
 import React from "react";
-import erro404 from "assets/erro_404.png";
+import erro404 from "assets/404astronaut.png";
 import BotaoPrincipal from "components/BotaoPrincipal";
 import { useNavigate } from "react-router-dom";
 
@@ -29,7 +29,7 @@ export default function NotFound() {
           </BotaoPrincipal>
         </div>
 
-        <img className={styles.imagemCachorro} src={erro404} alt="Cachorro" />
+        <img className={styles.imagemCachorro} src={erro404} alt="Stormtrooper" />
       </div>
       <div className={styles.espacoEmBranco}></div>
     </>

@@ -3,19 +3,8 @@
     position: relative;
 }
 
-.fotoCapa,
 .titulo {
     height: 204px;
-}
-
-.fotoCapa {
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    z-index: -1;
 }
 
 .titulo {
@@ -29,6 +18,10 @@
 .postConteudoContainer {
     padding: 2.5rem 7.5rem 4.5rem;
 }
+.postConteudoContainer h2 {
+    color: rgb(99, 185, 91);
+}
+
 
 @media (max-width: 744px) {
     .postConteudoContainer {

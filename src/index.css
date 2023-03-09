@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +8,11 @@
 }
 
 :root {
-  --azul-escuro: #041833;
-  --azul-medio: #1875E8;
-  --cor-fonte-principal: #041833;
-  --cor-fonte-post: #444444;
+  --azul-claro: #9EA1D4;
+  --azul-medio: #3F497F;
   --branco: #FFF;
-  --fonte-principal: 'Raleway', sans-serif;
-  --fonte-secundaria: 'Playfair Display', sans-serif;
+  --fonte-principal: 'Ubuntu', sans-serif;
+  --fonte-secundaria: 'Roboto', sans-serif;
 
   font-family: var(--fonte-principal);
 }
@@ -21,6 +22,29 @@
   grid-template-rows: auto 1fr auto;
   grid-template-columns: minmax(0, 1fr);
   min-height: 100vh;
+}
+
+.switch {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  right: 5rem;
+  top: 2.5rem;
+}
+
+#light {
+  background-color: #dddddd;
+}
+#dark {
+  background-color: #191919;
+}
+
+#light .switch label {
+  color: #191919;
+}
+#dark .switch label {
+  color: #FFF;
 }
 
 a, button, input, textarea {
@@ -43,4 +67,99 @@ li {
 h1, h2, h3 {
   font-weight: 700;
   line-height: 5rem;
+}
+
+#light  p {
+  color: var(--cor-fonte-post);
+}
+#light h1{
+  color: #db7979;
+}
+#light h2 {
+  color: #db7979;
+}
+#light h3 {
+  color: #774360;
+}
+#light h4 {
+  color: #B25068;
+}
+#light a {
+  color: #E7AB79;
+}
+#light blockquote  {
+  background-color: #e9ebeb;
+  border: 1px solid #000;
+}
+#light blockquote p{
+  color: #000;
+}
+#light pre {
+  background-color: #e9ebeb;
+  border: 1px solid #000;
+}
+#light blockquote pre code{
+  color: #000;
+}
+
+
+#dark p {
+  color: #FFF;
+}
+#dark h1 {
+  color: #FD8A8A;
+}
+#dark h2 {
+  color: #F1F7B5;
+}
+#dark h3 {
+  color: #A8D1D1;
+}
+#dark h4 {
+  color: #9EA1D4;
+}
+#dark a {
+  color: #F8F5E4;
+}
+#dark blockquote  {
+  background-color: #494949;
+  border: 1px solid #FFF;
+}
+#dark blockquote p{
+  color: #fbfbfb;
+}
+#dark pre {
+  background-color: #494949;
+  border: 1px solid #FFF;
+}
+#dark pre code {
+  color: #fbfbfb;
+}
+
+@media (max-width: 1100px) {
+  .switch {
+      right: 7.7rem;
+      top: 3.2rem;
+  }
+}
+
+@media (max-width: 744px) {
+  .switch {
+    right: 1rem;
+    top: 1.7rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .switch {
+    right: .3rem;
+    top: 1.7rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .switch {
+    right: 6.3rem;
+    top: 3.5rem;
+  }
 }

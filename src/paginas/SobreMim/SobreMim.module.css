@@ -3,6 +3,8 @@
     margin-left: 1.5rem;
     width: 40vw;
     float: right;
+    border-radius: 10px;
+    border: 1px solid #FFF;
 }
 
 .subtitulo {

@@ -5,6 +5,13 @@
     align-items: center;
     column-gap: 3rem;
 }
+.navegacao a:hover {
+    text-decoration: underline;
+}
+
+#dark header {
+    color: aquamarine;
+}
 
 @media (max-width: 744px) {
     .navegacao {
