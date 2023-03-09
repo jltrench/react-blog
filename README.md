@@ -1,6 +1,6 @@
 # The Random Blog
 
-The Random Blog é um projeto realizado durante o curso de React Router DOM da Alura com algumas features e estilazações novas.
+The Random Blog é um projeto realizado durante o curso de React Router DOM da Alura com algumas features e estilizações novas.
 
 **Deploy: https://react-blog-alpha-swart.vercel.app/**
 
